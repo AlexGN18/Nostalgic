@@ -25,9 +25,9 @@ public class Registro extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String nombre = request.getParameter("nombre");
-        String nickname = request.getParameter("nickname");
-        String contraseña = request.getParameter("contraseña");
+        String nombre = request.getParameter("usuario");
+        String nickname = request.getParameter("nick");
+        String contraseña = request.getParameter("password");
         String telefono = request.getParameter("telefono");
         String correo = request.getParameter("correo");
 
@@ -40,19 +40,12 @@ public class Registro extends HttpServlet {
         
         whatsAppDao usuarioNew=new whatsAppDao();
         usuarioNew.savePersona(nombre, nickname, correo, telefono, contraseña);
-                
-
-        if (nombre != null && !nombre.isEmpty()
-                && nickname != null && !nickname.isEmpty()
-                && contraseña != null && !contraseña.isEmpty()
-                && telefono != null && !telefono.isEmpty()
-                && correo != null && !correo.isEmpty()) {
 
             HttpSession sesion = request.getSession();
             sesion.setAttribute("usuario", usuario);
             response.sendRedirect("ChatRoom.jsp");
 
-        }
+        
     }
 
 }
