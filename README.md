@@ -21,6 +21,7 @@ Para poder empezar a usar Nostalgic solo sigue estas simples instrucciones:
 6. Da click en el boton de login.  
 7. Ingresa tus datos de **Usuario** y **Contraseña** tal como lo hiciste en el formulario.  
 8. Da click en el boton de ACEPTAR.  
+9. Una vez que iniciaste secion, el navegador te mostrara del lado izquierdo una lista  con todos los usuarios registrados dentro de **Nostalgic.** 
 
 ### **Requisitos**
 
@@ -32,11 +33,11 @@ Nostalgic 1.0
 
 ## **Autores**
 
-+ Edher Diaz.  
-+ Martin Avila.    
-+ Alvaro Castañeda.    
-+ Miguel Guzman.    
-+ Alejandro Guerrero.    
++ [Edher Diaz.](https://www.linkedin.com/in/edher-gerardo-diaz-fernandez-413719b5/)   
++ [Martin Avila.](https://www.linkedin.com/in/martin-avila-escobedo-614327b4/)      
++ [Alvaro Castañeda.](https://www.linkedin.com/in/alvaro-casta%C3%B1eda-escobedo-691a0b152/)  
++ [Miguel Guzman.](https://www.linkedin.com/in/miguel-osvaldo-guzman-palomar-069802153/)  
++ [Alejandro Guerrero.](https://www.linkedin.com/in/claudio-alejandro-guerrero-nocedal-a283b9153/)  
 + Justino Duran.    
 
 ## **Licencia**
