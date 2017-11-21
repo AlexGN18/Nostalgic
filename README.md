@@ -32,12 +32,12 @@ Nostalgic 1.0
 
 ## Autores
 
-Edher Diaz
-Martin Avila.
-Alvaro Castañeda.
-Muguel Guzman.
-Alejandro Guerrero.
-Justino Duran.
+Edher Diaz.  
+Martin Avila.  
+Alvaro Castañeda.  
+Muguel Guzman.  
+Alejandro Guerrero.  
+Justino Duran.  
 
 ## Licencia
 
