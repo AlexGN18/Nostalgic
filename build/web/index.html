@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Nostalgic</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this template -->
+        <link href="css/freelancer.css" rel="stylesheet">
+        
+        <link href="vendor/bootstrap/js/bootstrap.js" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top">
+
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container">
+                <img class="img-fluid" src="img/chat.png">
+                <div class="intro-text">
+                    <span class="name">Nostalgic</span>
+                    <hr class="star-light">
+                    <span class="skills">La mensajeria de tus recuerdos</span>
+                </div>
+
+                <button type="button" class="btn btn-outline-light btn-lg btn-block" data-toggle="modal" data-target="#exampleModal" style=" margin: 5px 0px 20px 0px;">
+                    L O G I N
+                </button>
+                <button type="button" class="btn btn-outline-light btn-lg btn-block" data-toggle="modal" data-target="#exampleModal2">
+                    R E G I S T R A T E 
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel" style="color:#2c3e50">Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1" >
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12" style="height: 0.8cm"></div>
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <span class="input-group-addon" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="row">
+                                    <div class="col-sm-5"></div>
+                                    <div class="col-sm-5">
+                                        <button type="submit" onclick = "location='ChatRoom.jsp'" class="btn btn-success btn-lg" style="margin-left: 70px;">Success</button>
+                                    </div>
+                                    <div class="col-sm-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel2">Registrate</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form method="POST" action="Registro">
+                                    <div class="row">
+                                        <div class="col-sm-12" style="background: white; margin: 5px 0px 20px 0px;">               
+                                            <input type="text" class="form-control" id="usuario" placeholder="Nombre" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12" style="background: white;margin: 5px 0px 20px 0px;">               
+                                            <input type="text" class="form-control" id="nick" placeholder="Nick Name" >
+                                        </div>
+                                        <div class="col-sm-12" style="background: white;margin: 5px 0px 20px 0px;">               
+                                            <input type="text" class="form-control" id="telefono" placeholder="Telefono" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12" style="background: white;margin: 5px 0px 20px 0px;">               
+                                            <input type="text" class="form-control" id="correo" placeholder="Correo">
+                                        </div>
+                                        <div class="col-sm-12" style="background: white;margin: 5px 5px 20px 0px;">               
+                                            <input type="text" class="form-control" id="password" placeholder="Password" >
+                                        </div>
+                                    </div>
+                                </form> 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="load"  onclick="sendDataToBack()" class="btn btn-success btn-lg" style="margin-left: 170px;">Success</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Contact Form JavaScript -->
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/freelancer.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
