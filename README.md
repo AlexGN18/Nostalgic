@@ -8,7 +8,7 @@ Debido a que Nostalgic usa el mismo plan de datos que utilizas para E-mail o Nav
 
 Para poder empezar a usar Nostalgic solo sigue estas simples instrucciones:
 
-1. Accede a "URL del sitio".  
+1. Accede a **URL del sitio**.  
 2. Da click en el boton de registro.  
 3. Ingresa tus datos tales como:   
     Usuario  
