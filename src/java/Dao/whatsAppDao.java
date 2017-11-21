@@ -27,10 +27,11 @@ public class whatsAppDao {
         session = HibernateUtil.getLocalSession();
     }
 
-    public List<usuarioPojo> getPersonaById(String correo, String password) {
-        List<usuarioPojo> listaCorreo = (List<usuarioPojo>) session.createCriteria(usuarioPojo.class)
-                .add(Restrictions.eq("Email", correo)).add(Restrictions.eq("Contraseña", password)).list();
-        return listaCorreo;
+    public List<usuarioPojo> getPersonaById(String nombre) {
+        List<usuarioPojo> listaDeUsuarios=(List<usuarioPojo>)
+                session.createCriteria(usuarioPojo.class)
+                .add(Restrictions.eq("Nombre", nombre));
+        return listaDeUsuarios;
     }
     
     public usuarioPojo getPersonaByEmail(String email) {
