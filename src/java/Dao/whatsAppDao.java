@@ -5,12 +5,15 @@
  */
 package Dao;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import hbm.HibernateUtil;
 import java.util.List;
 //import javafx.scene.chart.PieChart.Data;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
+import org.json.JSONArray;
 import pojo.conversacionPojo;
 import pojo.replyPojo;
 import pojo.usuarioPojo;
@@ -27,16 +30,28 @@ public class whatsAppDao {
         session = HibernateUtil.getLocalSession();
     }
 
-    public List<usuarioPojo> getPersonaById(String correo, String password) {
-        List<usuarioPojo> listaCorreo = (List<usuarioPojo>) session.createCriteria(usuarioPojo.class)
-                .add(Restrictions.eq("Email", correo)).add(Restrictions.eq("Contraseña", password)).list();
-        return listaCorreo;
+    public List<usuarioPojo> getPersonaById(String nombre) {
+        List<usuarioPojo> listaDeUsuarios=(List<usuarioPojo>)
+                session.createCriteria(usuarioPojo.class)
+                .add(Restrictions.eq("Nombre", nombre));
+        return listaDeUsuarios;
     }
     
     public usuarioPojo getPersonaByEmail(String email) {
         return (usuarioPojo) this.session.createCriteria(usuarioPojo.class)
                 .add(Restrictions.eq("Email", email))
                 .uniqueResult();
+    }
+    public List<usuarioPojo> getTodosContactos() {
+        return (List<usuarioPojo>) this.session.createCriteria(usuarioPojo.class)
+                .list();
+    }
+
+    
+    public JSONArray getTodosContactosJSON(){
+        List<usuarioPojo> listac=getTodosContactos();
+        Gson g=new GsonBuilder().excludeFieldsWithoutExposeAnnotation().disableHtmlEscaping().create();
+        return new JSONArray(g.toJson(listac));
     }
 
     public boolean savePersona(String nombre, String nickName, String correo, String telefono, String contraseña) {

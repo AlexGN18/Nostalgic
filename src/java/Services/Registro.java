@@ -7,6 +7,8 @@ package Services;
 
 import Dao.whatsAppDao;
 import java.io.IOException;
+import java.io.PrintWriter;
+import static java.lang.System.out;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,15 +39,25 @@ public class Registro extends HttpServlet {
         usuario.setContraseña(contraseña);
         usuario.setTelefono(telefono);
         usuario.setEmail(correo);
-        
-        whatsAppDao usuarioNew=new whatsAppDao();
+
+        whatsAppDao usuarioNew = new whatsAppDao();
         usuarioNew.savePersona(nombre, nickname, correo, telefono, contraseña);
+        usuarioPojo usuarioLogin = new usuarioPojo();
+        if (correo != null && !correo.isEmpty()) {
+            usuarioLogin = new whatsAppDao().getPersonaByEmail(correo);
+        }
 
-            HttpSession sesion = request.getSession();
-            sesion.setAttribute("usuario", usuario);
-            response.sendRedirect("ChatRoom.jsp");
+        try (PrintWriter out = response.getWriter()) {
+            if (usuarioLogin != null && usuarioLogin.getContraseña().equals(contraseña)) {
+                System.out.println(usuarioLogin.getNickName() + " ha iniciado sesion");
+                request.getSession(true).setAttribute("usuario", usuarioLogin);
+                request.getSession().setAttribute("nickname", usuarioLogin.getNickName());
+                out.print("true");
+                return;
+            }
+            out.print("false");
+        }
 
-        
     }
 
 }
