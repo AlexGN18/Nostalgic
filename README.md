@@ -30,6 +30,7 @@ Para poder utilizar Nostalgic solo necesitas un navegador web compatible con : H
 ## **Version**
 
 Nostalgic 1.0
+
 *En el README.md del branch "login" puede encontrar mas información (README actualizado y proyecto funcionando).
 
 ## **Autores**
