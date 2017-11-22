@@ -63,7 +63,7 @@ Since **Nostalgic** uses the same data plan that you use for your e-mail or web 
 
 To be able to use **Nostalgic** just follow this simple instructions:  
 1. Acces to **Site URL**.  
-2. Clic on the register button.  
+2. Click on the register button.  
 3. Input your info such as:  
 - User  
 - Nickname  
@@ -71,7 +71,7 @@ To be able to use **Nostalgic** just follow this simple instructions:
 - Password  
 - Phone number  
 4. Click on Accept, to get your datta correctly registred.  
-5. Once you registred your data, get back to the main page.  
+5. Once you registred your datta, get back to the main page.  
 6. Click on login.  
 7. Input your **User** and **Password** info, like you did on the registry.  
 8. Click on the **ACCEPT** button.  
