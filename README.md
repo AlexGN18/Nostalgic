@@ -51,7 +51,7 @@ Este proyecto esta basado en la licencia de GPLv3+: http://www.gnu.org/licenses/
 No deberas utilizar esta aplicacion para propositos de **Marketing** (SPAM)
 Nos reservamos el derecho de bloquear a cualquier usuario que inflija estos terminos y condiciones.
 
-#ENGLISH VERSION:
+# ENGLISH VERSION:
 
 # **Nostalgic**  
 
