@@ -18,10 +18,6 @@
         <link href="https://use.fontawesome.com/c4cf86dd47.css" media="all" rel="stylesheet">-->
     </head>
     <body style="background: #8E9394">
-        <nav class="navbar navbar-dark bg-primary">
-            <!-- Navbar content -->
-        </nav>
-
         <div class="container bootstrap snippet">
             <div class="row">
                 <div class="col-md-4 bg-white ">
@@ -42,7 +38,7 @@
 
                     <!-- =============================================================== -->
                     <!-- member list -->
-                    <ul class="friend-list">
+                    <ul class="friend-list" id="lista-contactos">
                         <li class="active bounceInDown">
                             <a href="#" class="clearfix">
                                 <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="rounded-circle">
@@ -52,17 +48,6 @@
                                 <div class="last-message text-muted">Hello, Are you there?</div>
                                 <small class="time text-muted">Just now</small>
                                 <small class="chat-alert label label-danger">1</small>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img src="https://bootdey.com/img/Content/user_2.jpg" alt="" class="rounded-circle">
-                                <div class="friend-name">
-                                    <strong>Jane Doe</strong>
-                                </div>
-                                <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
-                                <small class="time text-muted">5 mins ago</small>
-                                <small class="chat-alert text-muted"><i class="fa fa-check"></i></small>
                             </a>
                         </li>
                     </ul>
@@ -115,6 +100,7 @@
                 </div>
             </div>
         </div>
-
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="js/chatroom.js"></script>
     </body>
 </html>

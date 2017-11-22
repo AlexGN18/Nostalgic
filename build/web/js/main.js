@@ -16,27 +16,30 @@ function sendDataToBack() {
 
     },
             function (data) {
-                console.log("Exito");
-                if (data.resultado) {
-
+                if (data) {
+                    window.console.log("Login exitoso.");
+                    window.location = "ChatRoom.jsp";
                 }
 
             });
 
 }
-function sendDataToBackLogin(){
-     var correoL=document.getElementById("correoL").value;
-     var passwordL=document.getElementById("passwordL").value;
-     
-     $.post("Login",{
-         correoL:correoL,
-         passworL:passwordL
-     },function(respuesta){
-         if(respuesta) {
-             window.console.log("Login exitoso.");
-             window.location = "ChatRoom.jsp";
-         }
-     });
+function sendDataToBackLogin() {
+    var correoL = document.getElementById("correoL").value;
+    var passwordL = document.getElementById("passwordL").value;
+
+    $.post("Login", {
+        correoL: correoL,
+        passworL: passwordL
+    }, function (respuesta) {
+        if (respuesta) {
+            window.console.log("Login exitoso.");
+            window.location = "ChatRoom.jsp";
+            
+            
+            
+        }
+    });
 }
 
 
