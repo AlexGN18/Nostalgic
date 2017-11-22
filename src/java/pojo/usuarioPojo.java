@@ -5,6 +5,7 @@
      */
     package pojo;
 
+import com.google.gson.annotations.Expose;
     import java.util.Date;
     import javax.persistence.Column;
     import javax.persistence.Entity;
@@ -22,19 +23,24 @@
     @Table(name="usuario",catalog="nostalgicbueno")
     public class usuarioPojo {
 
+        
         @Id @GeneratedValue
         @Column (name = "idusuario")
         private int idusuario;
 
+       
         @Column (name = "Nombre")
         private String Nombre;
 
+        @Expose
          @Column (name = "NickName")
         private String NickName;
 
+        
         @Column (name = "Telefono")
         private String Telefono;
 
+       
         @Column (name = "Email")
         private String Email;
 
